@@ -1,0 +1,9 @@
+.label:hover
+{
+    -fx-cursor:hand;
+}
+
+.slider:hover
+{
+    -fx-cursor:hand;
+}

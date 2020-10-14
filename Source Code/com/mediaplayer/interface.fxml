@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mediaplayer.Controller">
+    <bottom>
+        <StackPane prefHeight="77.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+            <children>
+                <Ellipse fill="WHITE" radiusX="91.0" radiusY="25.0" stroke="BLACK" strokeType="INSIDE">
+                    <StackPane.margin>
+                        <Insets bottom="-25.0" />
+                    </StackPane.margin>
+                </Ellipse>
+                <Ellipse fill="#ff9f9f" radiusX="48.0" radiusY="25.0" stroke="BLACK" strokeType="INSIDE">
+                    <StackPane.margin>
+                        <Insets bottom="-25.0" />
+                    </StackPane.margin>
+                </Ellipse>
+                <Label fx:id="play" onMouseClicked="#playMedia" prefHeight="35.0" prefWidth="54.0" text="Play">
+                    <font>
+                        <Font name="Eras Bold ITC" size="24.0" />
+                    </font>
+                    <StackPane.margin>
+                        <Insets bottom="-25.0" />
+                    </StackPane.margin>
+                </Label>
+                <Label fx:id="pause" onMouseClicked="#pauseMedia" prefHeight="35.0" prefWidth="78.0" text="Pause">
+                    <font>
+                        <Font name="Eras Bold ITC" size="24.0" />
+                    </font>
+                    <StackPane.margin>
+                        <Insets bottom="-25.0" />
+                    </StackPane.margin>
+                </Label>
+                <Label fx:id="slow" onMouseClicked="#slowMedia" prefHeight="35.0" prefWidth="13.0" text="S">
+                    <font>
+                        <Font name="Eras Bold ITC" size="24.0" />
+                    </font>
+                    <StackPane.margin>
+                        <Insets bottom="-25.0" right="140.0" />
+                    </StackPane.margin>
+                </Label>
+                <Label fx:id="fast" onMouseClicked="#fastMedia" prefHeight="35.0" prefWidth="17.0" text="F">
+                    <font>
+                        <Font name="Eras Bold ITC" size="24.0" />
+                    </font>
+                    <StackPane.margin>
+                        <Insets bottom="-25.0" left="140.0" />
+                    </StackPane.margin>
+                </Label>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d7d7d7" height="26.0" stroke="BLACK" strokeType="INSIDE" width="73.0">
+                    <StackPane.margin>
+                        <Insets bottom="-50.0" left="625.0" />
+                    </StackPane.margin>
+                </Rectangle>
+                <Label onMouseClicked="#addMedia" prefHeight="28.0" prefWidth="69.0" text="Add File" underline="true">
+                    <font>
+                        <Font name="Franklin Gothic Book" size="20.0" />
+                    </font>
+                    <StackPane.margin>
+                        <Insets bottom="-50.0" left="625.0" />
+                    </StackPane.margin>
+                </Label>
+                <Slider fx:id="volumeControl" maxWidth="165.0" minWidth="50.0" prefHeight="18.0" prefWidth="165.0">
+                    <StackPane.margin>
+                        <Insets bottom="-50.0" right="525.0" />
+                    </StackPane.margin>
+                </Slider>
+                <Ellipse fill="WHITE" radiusX="35.0" radiusY="11.0" stroke="BLACK" strokeType="INSIDE">
+                    <StackPane.margin>
+                        <Insets bottom="-55.0" left="300.0" />
+                    </StackPane.margin>
+                </Ellipse>
+                <Label onMouseClicked="#reload" prefHeight="20.0" prefWidth="61.0" text="Reload">
+                    <font>
+                        <Font name="Eras Bold ITC" size="17.0" />
+                    </font>
+                    <StackPane.margin>
+                        <Insets bottom="-55.0" left="300.0" />
+                    </StackPane.margin>
+                </Label>
+                <Ellipse fill="WHITE" radiusX="32.0" radiusY="15.0" stroke="BLACK" strokeType="INSIDE">
+                    <StackPane.margin>
+                        <Insets left="450.0" top="45.0" />
+                    </StackPane.margin>
+                </Ellipse>
+                <Label onMouseClicked="#stopMedia" prefHeight="25.0" prefWidth="57.0" text="Stop">
+                    <font>
+                        <Font name="Eras Bold ITC" size="24.0" />
+                    </font>
+                    <StackPane.margin>
+                        <Insets left="450.0" top="45.0" />
+                    </StackPane.margin>
+                </Label>
+            <Slider fx:id="seeker">
+               <StackPane.margin>
+                  <Insets bottom="55.0" />
+               </StackPane.margin>
+            </Slider>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" onMouseClicked="#fullScreen" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="21.0">
+               <StackPane.margin>
+                  <Insets right="275.0" top="25.0" />
+               </StackPane.margin>
+            </Rectangle>
+            <Text fx:id="timing1" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="146.6708984375">
+               <StackPane.margin>
+                  <Insets bottom="15.0" right="550.0" />
+               </StackPane.margin>
+            </Text>
+            <Text fx:id="timing2" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="146.6708984375">
+               <StackPane.margin>
+                  <Insets bottom="15.0" left="550.0" />
+               </StackPane.margin>
+            </Text>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </StackPane>
+    </bottom>
+   <center>
+      <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
