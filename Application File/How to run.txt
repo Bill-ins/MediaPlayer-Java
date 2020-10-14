@@ -1,0 +1,12 @@
+Goto "Application Run -> lib" copy the path then paste and replace the --here-- inside double quote on that code that is given on the last 
+*Make sure to paste the path inside the double quote only*
+
+Open command prompt and change the directory to this folder
+
+then copy that code and paste on the prompt and press enter
+
+_______________________________________________________________________________________________
+
+java --module-path "here" --add-modules javafx.controls,javafx.fxml,javafx.web,javafx.graphics -jar MyMediaPlayer.jar
+
+_______________________________________________________________________________________________
